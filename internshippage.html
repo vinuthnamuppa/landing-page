@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        header{
+            height:100vh;
+            width:100%;
+            background-image: url("https://www.shutterstock.com/image-photo/various-hair-dresser-tools-on-260nw-1163342353.jpg");
+            filter:brightness(70%);
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        nav{
+            width:100%;
+            height:100px;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 4em;
+            letter-spacing: 3px;
+            font-weight: 200;
+            font-style: bold;
+            padding-top: 2cm;
+            padding-right: 6cm;
+            font-family: ;
+        }
+        .menu a{
+            text-decoration: none;
+            color: darkmagenta;
+            font-size: 25px;
+            padding-top: 1cm;
+            padding:10px 20px;
+            position:relative;
+        }
+        .menu a:before{
+          content: '';
+          position: absolute;
+          top:0;
+          left:0;
+          width:0%;
+          height:100%;
+          border-bottom: 2px solid indianred;
+          transition:0.5s linear;
+        }
+        .menu a:hover:before{
+            width:90%;
+        }
+        .booking a{
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+            padding-top: 1cm;
+            padding:10px 20px;
+            background: indianred;
+        }
+        .booking a:hover{
+            background: transparent;
+            border:2px solid indianred;
+        }
+        .caption{
+            max-width: 650px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-80%);
+            text-align: center;
+            color: brown;
+        }
+        .caption span{
+            letter-spacing: 5px;
+            font-size: 1.5em;;
+        }
+        
+        .caption h1{
+            font-size:3.5em;
+            font-style:italic;
+            color: brown;
+        }
+        .caption a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding-top: 2cm;
+            padding:10px 20px;
+            background: indianred;
+            border-radius:8px;
+        }
+        .caption a:hover{
+            background: transparent;
+            border:2px solid indianred;
+        }
+        #aboutus 
+        {
+            height:80vh;
+            width:100%;
+            background-image: url("https://i2.wp.com/i.pinimg.com/originals/6e/d6/f9/6ed6f98d129906dcf03e7ec031fd2963.jpg");
+            filter:brightness(60%);
+            background-size: cover;
+            text-align: center;
+        }
+        #aboutus div>h1
+        {
+            padding-top: 1cm;;
+             font-size: 3em;
+             font-family: serif;
+             color: darkmagenta;
+        }
+        #aboutus div>h2{
+            font-size: 2em;
+            font-family: serif;
+            color:rgb(81, 28, 107);
+        }
+        #aboutus section{
+            text-align: center;
+            font-size:1.5em;
+            color:black
+        }
+        #ourservices{
+            width:100%;
+            height:90vh;
+            background-image:url("https://static.vecteezy.com/system/resources/thumbnails/033/999/950/small/smimilg-young-woman-with-tanned-skin-and-long-groomed-hair-isolated-on-flat-beige-pastel-background-with-copy-space-model-for-banner-of-cosmetic-products-beauty-salon-and-dentistry-ai-generative-photo.jpg");
+            background-size: cover;
+            filter: brightness(60%);
+            text-align: justify;
+        }
+        #ourservices h1{
+            font-size: 3em;
+            padding-top: 1cm;
+            font-family: serif;
+            color: rgb(112, 2, 112);
+        }
+        #ourservices section{
+            font-size:1.75em;
+            color:black
+        }
+        #packages{
+            height:90vh;
+            width:100%;
+            background-image: url("https://cdn.wallpapersafari.com/29/41/DlsU41.jpg");
+            filter:brightness(40%);
+            background-size: cover;
+            text-align: center;
+        }
+        #packages h1{
+            font-size: 3.5em;
+            padding-top: 1cm;
+            font-family: serif;
+           color: peachpuff;
+        }
+        #packages section{
+            font-size: 1.5em;
+            color:white;
+            text-align: center;
+
+        }
+        #contact
+        {
+            height:80vh;
+            width:100%;
+            background-color: pink;
+            filter:brightness(60%);
+            background-size: cover;
+            text-align: center;
+        }
+        #contact h1{
+            font-size:3.5em;
+            padding-top: 1cm;
+            font-family: serif;
+           color: rgb(112, 2, 112);
+        
+        }
+        #contact section{
+            font-size:1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+            NuMe!
+        </div>
+        <div class="menu">
+            <a href="#aboutus">About Us</a>
+            <a href="#ourservices">Our Services</a>
+            <a href="#packages">Packages</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="booking">
+            <a href="#">join our channel</a>
+        </div>
+        </nav>
+        <section class="caption">
+            <span>Beauty Served Better!</span>
+            <h1>Spa & Beauty Center</h1>
+            <br>
+            <a href="#">Book Now</a>
+          
+        </section>
+    
+     </header>
+    <section id="aboutus">
+        <div>
+        <h1>Welcome to NuMe!</h1>
+        <h2>About Us</h2>
+        </div>
+        <section>
+            <p>At NuMe!,We believe in the transformative power of beauty </p>
+            <p>Founded with a passion for excellence and a </br>commitment to our clients' satisfaction,NuMe! has  </br>been a trusted name in the beauty industry for 3 years. </p>
+            <p><b>Why Choose Us?</b></p>
+            <ol></ol><li>Use of Natural Products</li>
+            <li>Expertise</li>
+            <li>Luxurious Environment</li>
+            <li>Personalized Care</li>
+            <li>Affordable Prices</li></ol>
+         </section>
+    </section>
+    <section id="ourservices">
+       
+            <h1> Our Services</h1>
+            <section>
+                <p>  NuMe! provides high quality services to our customers. </p>
+                <p><b style="text-decoration: underline;">  our services include:</b></p>
+                <p><b>  Hair Care: </b>  Experience the difference of exceptional hair care.
+                </p>
+                <p><b>  Skin Care: </b>  Revitalize Your Skin with Expert Care. </p>
+                <p><b>  Body Care: </b>  Indulge in self-care,because your body deserves it.</p>
+                <p><b>  Waxing: </b>   Smooth skin,confident stride. </p>
+                <p><b>  Makeup: </b>  Enhance your natural beauty with a touch of artistry.</p>
+                <p><b>  Spa: </b>  Refresh,rejuvenate and restore at NuMe! </p>
+             </section>
+    </section>
+    <section id="packages">
+        <h1>Our Packages</h1>
+        <section>
+        <p style="color:aqua"><b>1000/-</b></p>
+        <p>Facial , Waxing , Threading</p>
+        <p style="color:aqua"><b>1500/-</b></p>
+        <p>Facial , Waxing , Hair Spa</p>
+        <p style="color:aqua"><b>1500/-</b></p>
+        <p>Facial , Manicure and Pedicure , Hair Spa</p>
+        <p style="color:aqua"><b>2000/-</b></p>
+        <p>Gold Facial , Hair spa and cut, Pedicure</p>
+        <p style="color:aqua"><b>5500/-</b></p>
+        <p>Bridal Makeup including Facial</p>
+        </section>
+    </section>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <section>
+            <p>For any kind of queries,do reach us.Dial <b style="color: crimson;">0000000000 .</b></p>
+            <p>Customer care services on above number are available 24 hours.</p>
+            <p>For Pre-Bookings or Online payments contact: <b style="color: crimson;">1111111111 .</b></p>
+            <p><b style="text-decoration: underline;">Locations:</b></p>
+            <p>Town Hall Road,Vizag,Andhra Pradesh.</p>
+            <p>Hunter Road,Warangal,Telangana.</p>
+            <p>Kompally,Hyderabad,Telangana.</p>
+            <p>Pantheon Road,Chennai,Tamil Nadu.</p>
+        </section>
+    </section>
+</body>
+</html>
